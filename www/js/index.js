@@ -55,7 +55,7 @@ var app = {
 		function onMapClick(e) {
 			popup
 				.setLatLng(e.latlng)
-				.setContent("I lost my pet here")
+				.setContent("I found a pet here")
 				.openOn(map);
 		}
 
