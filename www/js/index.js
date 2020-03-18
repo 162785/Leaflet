@@ -37,16 +37,25 @@ var app = {
 			maxZoom: 17
 		}).addTo(map);
 
-
-		L.marker([51.58656, 4.77596]).addTo(map)
-			.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-
+		var imageUrl = 'img/pet/dog1.png',
+       imageBounds = [[51.58650, 4.77600], [51.58250, 4.77000]];
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
+		
+		var imageUrl = 'img/pet/cat1.png',
+       imageBounds = [[51.59650, 4.78600], [51.59250, 4.78000]];
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
+		
+		var imageUrl = 'img/pet/horse1.png',
+       imageBounds = [[51.57650, 4.79600], [51.57250, 4.79000]];
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
+		
+		
 		var popup = L.popup();
 
 		function onMapClick(e) {
 			popup
 				.setLatLng(e.latlng)
-				.setContent("You clicked the map at " + e.latlng.toString())
+				.setContent("I lost my pet here")
 				.openOn(map);
 		}
 
@@ -90,3 +99,4 @@ var app = {
 	$(window).resize(function() {
 		app.resizeMap();
 	});
+

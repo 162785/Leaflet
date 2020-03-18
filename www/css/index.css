@@ -111,7 +111,7 @@ h1 {
 
 .icon-bar {
   width: 100%;
-  background-color: #999;
+  background-color: #82ADA9;
   overflow: auto;
 }
 
@@ -126,7 +126,7 @@ h1 {
 }
 
 .icon-bar a:hover {
-  background-color: #888;
+  background-color: #AB5C59;
 }
 
 .active {
@@ -138,13 +138,4 @@ h1 {
   color: white;
   padding: 14px 28px;
   cursor: pointer;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-html, body, #map {
-    height: 100%;
-    width: 100vw;
 }
